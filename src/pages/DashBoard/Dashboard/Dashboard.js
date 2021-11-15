@@ -13,7 +13,7 @@ import './Dashboard.css'
 
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
-    const { admin } = useAuth()
+    const { user, admin, logOut } = useAuth()
     return (
         <div className="container-fluid" >
             <div className="row flex-nowrap">
@@ -59,6 +59,10 @@ const Dashboard = () => {
 
 
                                 </ul>
+                                {
+                                    user?.email ? <div><p>{user.displayName}</p> <button onClick={logOut} className='btn link btn-dark text-white'>LogOut</button></div>
+                                        : <Link to='/login'><button className='btn link btn-danger'>LogIn</button></Link>
+                                }
                             </li>
 
 
