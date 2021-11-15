@@ -1,0 +1,20 @@
+
+.form-control{
+    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('../../images/pexels-photo-1149137.jpeg');
+    
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    margin-top: 300px;
+    margin-bottom: 300px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+.register{
+    text-decoration: none;
+
+}
